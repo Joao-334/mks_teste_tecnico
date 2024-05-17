@@ -45,9 +45,13 @@ npm run start:dev
 
 ```
 
+<p style="text-align: left">Desta forma, você deve continuar podendo desenvolver a API sem maiores problemas, apenas lembre de rodar as migrations e criar a database se for usar uma diferente!</p>
 
-## Acessando a Documentação da API
+## Acessando a API e Documentação
 
-- Ambiente Local - [Aqui](http://localhost:3000/api)
-- Ambiente de Produção (Deploy) - [Aqui](##)
+- Documentação - [Aqui](http://localhost:3000/api)
+- Deploy - []()
 
+## Considerações
+
+<p style="text-align: left">Não achei nescessário a existências de testes e2e e unitários devido a simplicidade da aplicação, o desenvolvimento desses testes não me daria um ganho de tempo se testados na mão, visto que cada rota era produzida unicamente e logo em seguida, testada, por isso não os inclui no repositorio.</p>
