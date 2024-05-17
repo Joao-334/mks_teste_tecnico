@@ -20,29 +20,14 @@ RestFull de filmes, com controle de usuários, banco de dados postgres e redis c
 ## Rodando o Docker Compose
 
 ```bash
-# rodando o container em modo de desenvolvimento (redis e postgresql)
+# Subindo o Container
 docker-compose up
 
-# rodando o container em modo de desenvolvimento com o detached aplicado (redis e postgresql)
+# Subindo o container com o detached aplicado
 docker-compose up -d
 
-# rodando o container em modo de produção (imagem da api)
-docker-compose --profile production up -d
-
-# stoping the container
+# Encerrando o container
 docker-compose down
-```
-
-<p style="text-align: left">Em modo de desenvolvimento, você ainda precisa instalar as depêndencias do projeto antes de roda-lo, subindo como produção, essa nescessidade é cortada</p>
-
-```bash
-
-# Instalando os pacotes e bibliotecas
-npm install
-
-# Subindo o servidor
-npm run start:dev
-
 ```
 
 ## Acessando a Documentação e a API

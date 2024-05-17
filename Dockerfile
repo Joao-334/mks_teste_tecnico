@@ -1,5 +1,5 @@
 #set node version
-FROM node:18-alpine3.15 As production
+FROM node:18-alpine3.15
 
 # Define workdir
 WORKDIR /usr/src/api
