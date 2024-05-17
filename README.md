@@ -28,7 +28,7 @@ docker-compose up
 docker-compose up -d
 
 # rodando o container em modo de produção (imagem da api)
-docker-compose -- profile production up -d
+docker-compose --profile production up -d
 
 # stoping the container
 docker-compose down
@@ -47,10 +47,9 @@ npm run start:dev
 
 <p style="text-align: left">Desta forma, você deve continuar podendo desenvolver a API sem maiores problemas, apenas lembre de rodar as migrations e criar a database se for usar uma diferente!</p>
 
-## Acessando a API e Documentação
+## Acessando a Documentação
 
-- Documentação - [Aqui](http://localhost:3000/api)
-- Deploy - []()
+- Documentação - [Aqui](http://34.123.109.37:3000/api)
 
 ## Considerações
 
