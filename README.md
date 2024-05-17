@@ -1,8 +1,9 @@
 
 
-## Description
+## Descrição do Projeto
 
-<p style="text-align: left">Teste 123</p>
+<p style="text-align: left">Este projeto foi desenvolvido como teste tecnico da mks desenvolvimento de sistemas, se tratando de uma API
+RestFull de filmes, com controle de usuários, banco de dados postgres e redis como seu cache</p>
 
 ## Rodando o Docker Compose
 
