@@ -7,6 +7,17 @@ RestFull de filmes, com controle de usuários, banco de dados postgres e redis c
 
 <p style="text-align: left">Esta foi a primeira API que utilizei o docker para desenvolvimento, sendo esta uma tecnologia na qual não possuo tanto conhecimento, mas me esforçei para criar um bom docker-compose para ambiente de produção, como solicitado nas diretrizes do desafio</p>
 
+## Tecnologias do Projeto
+
+<div style="display: inline-block;">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" height="35" width="35"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" height="35" width="35" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg" height="35" width="35" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" height="35" width="35"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" height="35" width="35" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg" height="35" width="35" />               
+</div>
+
 ## Rodando o Docker Compose
 
 ```bash
