@@ -21,26 +21,33 @@ RestFull de filmes, com controle de usuários, banco de dados postgres e redis c
 ## Rodando o Docker Compose
 
 ```bash
-# starting the container
+# rodando o container em modo de desenvolvimento (redis e postgresql)
 docker-compose up
 
-# starting in detached mode
+# rodando o container em modo de desenvolvimento com o detached aplicado (redis e postgresql)
 docker-compose up -d
+
+# rodando o container em modo de produção (imagem da api)
+docker-compose -- profile production up -d
 
 # stoping the container
 docker-compose down
 ```
+<p style="text-align: left">Em modo de desenvolvimento, você ainda precisa instalar as depêndencias do projeto antes de roda-lo, subindo como produção, essa nescessidade é cortada</p>
 
-## Support
+```bash
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+#Instalando os pacotes e bibliotecas
+npm install
 
-## Stay in touch
+#Subindo o servidor
+npm run start:dev
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+```
 
-## License
 
-Nest is [MIT licensed](LICENSE).
+## Acessando a Documentação da API
+
+- Ambiente Local - [Aqui](http://localhost:3000/api)
+- Ambiente de Produção (Deploy) - [Aqui](##)
+

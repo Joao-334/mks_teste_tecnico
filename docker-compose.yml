@@ -25,6 +25,8 @@ services:
 
   movies:
     container_name: movies-api
+    profiles:
+      - production
     depends_on:
       - postgres
       - redis
