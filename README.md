@@ -37,10 +37,10 @@ docker-compose down
 
 ```bash
 
-#Instalando os pacotes e bibliotecas
+# Instalando os pacotes e bibliotecas
 npm install
 
-#Subindo o servidor
+# Subindo o servidor
 npm run start:dev
 
 ```
