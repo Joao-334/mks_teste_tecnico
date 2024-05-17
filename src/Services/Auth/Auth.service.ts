@@ -60,4 +60,10 @@ export class AuthService {
             48 * 3600000
         )
     }
+
+    async retrieveRedisToken(token: string): Promise<boolean> {
+        const value = await this.cacheManager.get<{ token?: string }>(token);
+
+        return value ? true : false;
+    }
 }

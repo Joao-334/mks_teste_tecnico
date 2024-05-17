@@ -3,7 +3,7 @@ import { CanActivate, ExecutionContext, Inject, Injectable, UnauthorizedExceptio
 import { JwtService } from '@nestjs/jwt';
 import { Cache } from 'cache-manager';
 import { Request } from 'express';
-import { AuthPayload } from 'src/Services/Auth/Auth.service';
+import { AuthPayload, AuthService } from 'src/Services/Auth/Auth.service';
 
 export interface RequestWithUser extends Request {
     user: AuthPayload;
@@ -12,7 +12,7 @@ export interface RequestWithUser extends Request {
 @Injectable()
 export class AuthGuard implements CanActivate {
 
-    constructor(private jwtService: JwtService, @Inject(CACHE_MANAGER) private cacheManager: Cache) { }
+    constructor(private jwtService: JwtService, private authService: AuthService) { }
 
     async canActivate(context: ExecutionContext): Promise<boolean> {
         const request = context.switchToHttp().getRequest<RequestWithUser>();
@@ -21,7 +21,7 @@ export class AuthGuard implements CanActivate {
 
         if (!token) throw new UnauthorizedException('Não foi possivel autenticar o usuario!');
 
-        const redisToken = await this.retrieveRedisToken(token);
+        const redisToken = await this.authService.retrieveRedisToken(token);
 
         if (!redisToken) throw new UnauthorizedException('Não foi possivel autenticar o usuario!');
 
@@ -43,9 +43,5 @@ export class AuthGuard implements CanActivate {
         return type === "Bearer" ? token : undefined;
     }
 
-    private async retrieveRedisToken(token: string): Promise<boolean> {
-        const value = await this.cacheManager.get<{ token?: string }>(token);
 
-        return value ? true : false;
-    }
 }
