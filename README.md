@@ -9,7 +9,7 @@ RestFull de filmes, com controle de usuários, banco de dados postgres e redis c
 
 ## Tecnologias do Projeto
 
-<div style="display: inline-block;">
+<div style="display: inline-block; margin: 2em">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" height="35" width="35"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" height="35" width="35" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg" height="35" width="35" />
