@@ -14,6 +14,10 @@ RUN npm install --quiet --no-optional --no-found --loglevel=error
 # Build for production
 RUN npm run build
 
+# Running migrations
+RUN npm run typeorm migration:show
+RUN npm run typeorm migration:run
+
 #Expose port 3000 from the API
 EXPOSE 3000
 
