@@ -23,11 +23,23 @@ RestFull de filmes, com controle de usuários, banco de dados postgres e redis c
 # Subindo o Container
 docker-compose up
 
-# Subindo o container com o detached aplicado
+# Subindo o container com o detached aplicado (redis e postgresql)
 docker-compose up -d
 
 # Encerrando o container
 docker-compose down
+```
+
+<p style="text-align: left">Você ainda precisa rodar as migrations para que possa testar o projeto, lembre-se de conectar um usuário com as permissões necessárias.</p>
+
+```bash
+
+# Exibindo as migrações e verificando se são detectadas
+npm run typeorm migration:show
+
+# Rodando as migrações para que sejam executadas no banco
+npm run typeorm migration:run
+
 ```
 
 ## Acessando a Documentação e a API
