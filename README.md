@@ -47,6 +47,16 @@ npm run start:dev
 
 <p style="text-align: left">Desta forma, você deve continuar podendo desenvolver a API sem maiores problemas, apenas lembre de rodar as migrations e criar a database se for usar uma diferente!</p>
 
+```bash
+
+# Verifique se ele reconhece as migrations 
+npm run typeorm migration:show
+
+# Execute as migrations
+npm run typeorm migrate:run
+
+```
+
 ## Acessando a Documentação e a API
 
 -  Link da API - [http://34.123.109.37:3000/](http://34.123.109.37:3000/)
