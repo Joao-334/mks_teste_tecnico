@@ -1,5 +1,3 @@
-
-
 ## Descrição do Projeto
 
 <p style="text-align: left">Este projeto foi desenvolvido como teste tecnico da mks desenvolvimento de sistemas, se tratando de uma API
@@ -15,7 +13,8 @@ RestFull de filmes, com controle de usuários, banco de dados postgres e redis c
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg" height="45" width="45" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" height="45" width="45"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" height="45" width="45" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg" height="45" width="45" />               
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg" height="45" width="45" /> 
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" height="45" width="45" />                     
 </div>
 
 ## Rodando o Docker Compose
@@ -33,6 +32,7 @@ docker-compose --profile production up -d
 # stoping the container
 docker-compose down
 ```
+
 <p style="text-align: left">Em modo de desenvolvimento, você ainda precisa instalar as depêndencias do projeto antes de roda-lo, subindo como produção, essa nescessidade é cortada</p>
 
 ```bash
@@ -47,7 +47,9 @@ npm run start:dev
 
 <p style="text-align: left">Desta forma, você deve continuar podendo desenvolver a API sem maiores problemas, apenas lembre de rodar as migrations e criar a database se for usar uma diferente!</p>
 
-## Acessando a Documentação
+## Acessando a Documentação e a API
+
+-  Link da API - [http://34.123.109.37:3000/](http://34.123.109.37:3000/)
 
 - Documentação - [Aqui](http://34.123.109.37:3000/api)
 
