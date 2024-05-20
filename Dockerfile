@@ -6,7 +6,6 @@ WORKDIR /usr/src/api
 
 #Copying the content in the pastes
 COPY . .
-COPY ./.env.production ./.env
 
 #Instal Dependencies
 RUN npm install --quiet --no-optional --no-found --loglevel=error
