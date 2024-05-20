@@ -44,7 +44,7 @@ npm run typeorm migration:run
 
 ## Acessando a Documentação e a API
 
--  Link da API - [http://34.123.109.37:3000/users](http://34.123.109.37:3000/users)
+-  Link da API - [Aqui](http://34.123.109.37:3000/users)
 
 - Documentação - [Aqui](http://34.123.109.37:3000/api)
 
