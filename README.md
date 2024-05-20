@@ -23,7 +23,7 @@ RestFull de filmes, com controle de usuários, banco de dados postgres e redis c
 # Subindo o Container
 docker-compose up
 
-# Subindo o container com o detached aplicado (redis e postgresql)
+# Subindo o container com o detached aplicado
 docker-compose up -d
 
 # Encerrando o container
